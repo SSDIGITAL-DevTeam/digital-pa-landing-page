@@ -53,81 +53,79 @@
         url('./fonts/inter-v12-latin-700.woff') format('woff');
       /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
+
+    .nav-link {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .btn-login {
+      width: 200px;
+      height: 56px;
+      background: #D81222;
+      color: #fff;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 16px;
+    }
   </style>
 
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navScroll">
 
-  <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
-    <div class="container">
+  <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top p-0" tabindex="0">
+    <div class="container border-bottom" style="padding-top: 12px; padding-bottom: 12px;">
       <a class="navbar-brand pe-4 fs-4" href="/">
-        <img src="img/webp/Logo with text.png" width="280" alt="">
+        <img src="img/webp/Logo with text.png" width="280" alt="Digital PA">
       </a>
-
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="#whyus" aria-label="Brings you to the frontpage">
-              Why Us
-            </a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#aboutus">
-              Our Works
-            </a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">
-              Our Services
-            </a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#workwithus">
-              Work with us
-            </a>
+            <a class="nav-link" href="#works">Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonials">
-              Testimonials
-            </a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
-
         </ul>
-
+        <div class="text-center">
+          <button class="btn btn-login">Login Member</button>
+        </div>
       </div>
     </div>
   </nav>
 
   <main>
-    <div class="w-100 overflow-hidden bg-gray-100" id="top">
-
+    <!-- <div class="w-100 overflow-hidden bg-gray-100" id="top">
       <div class="container position-relative">
         <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left"
           style="background-image: url(img/main-cover.png);">
-
         </div>
         <div class="row">
-
           <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
             <h1 class="display-1 fw-bold mt-5">Your <u>Trusted</u> Digital Personal Assistant.</h1>
             <p class="lead">We utilize <b>digital marketing</b> technology to <b>optimize and manage</b> your campaigns
               for <b>superior performance.</b></p>
             <a href="#" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"><b>I WANT TO GROW MY BUSINESS</b></a>
           </div>
-
-
-
         </div>
       </div>
+    </div> -->
 
-    </div>
-
-    <div class="py-vh-5 w-100 overflow-hidden" id="whyus">
+    <div class="py-vh-5 w-100 overflow-hidden" id="home">
       <div class="container">
         <div class="row d-flex justify-content-end">
           <div class="col-lg-8" data-aos="fade-down">
@@ -159,7 +157,7 @@
       </div>
     </div>
 
-    <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+    <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="about">
       <div class="container">
 
         <div class="row d-flex justify-content-between align-items-center">
@@ -416,7 +414,8 @@
             </div>
             <div class="row">
               <div style="margin: 0 auto; width: 350px;">
-                <a href="#data-form" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"><b>GET FREE CONSULTATION</b></a>
+                <a href="#data-form" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"><b>GET FREE
+                    CONSULTATION</b></a>
               </div>
             </div>
           </div>
@@ -478,16 +477,18 @@
       </div>
     </div>
 
-    <div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="workwithus">
+    <div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="works">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8 text-center" data-aos="fade">
               <p class="text-secondary lead">Let´s start a project together!</p>
-              <h2 class="display-6 mb-5">Our clients so far are satisfied with our services and we manage to <b>increase their sales and conversion by 20%-50%</b></h2>
+              <h2 class="display-6 mb-5">Our clients so far are satisfied with our services and we manage to <b>increase
+                  their sales and conversion by 20%-50%</b></h2>
             </div>
             <div class="col-12">
-              <a href="#data-form" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down"><b>I WANT TO INCREASE MY SALES</b></a>
+              <a href="#data-form" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down"><b>I WANT TO
+                  INCREASE MY SALES</b></a>
             </div>
           </div>
 
@@ -495,7 +496,7 @@
       </div>
     </div>
 
-    <div class="bg-light w-100 overflow-hidden" id="testimonials">
+    <div class="bg-light w-100 overflow-hidden" id="contact">
       <div class="container py-vh-6">
         <div class="row d-flex justify-content-center">
           <div class="col-12 col-lg-10 col-xl-8 text-center">
@@ -837,13 +838,13 @@
               </div>
               <div class="d-grid">
                 <button class="btn btn-primary btn-lg mt-4 btn-xl fw-light" type="button">
-                    <b>YES, I WANT TO GROW MY BUSINESS</b></button>
+                  <b>YES, I WANT TO GROW MY BUSINESS</b></button>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
   </main>
 
   <footer>
@@ -877,7 +878,7 @@
             </li>
           </ul>
         </div>
-        
+
       </div>
     </div>
   </footer>
