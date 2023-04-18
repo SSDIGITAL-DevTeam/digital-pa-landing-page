@@ -1,4 +1,4 @@
-/* NAVBAR */
+/* =============================== NAVBAR =============================== */
 
 .nav-link {
   font-weight: 500;
@@ -24,7 +24,7 @@
   font-size: 16px;
 }
 
-/* HERO */
+/* =============================== HERO =============================== */
 
 .hero-title {
   font-weight: 700;
@@ -55,7 +55,30 @@
 }
 
 
-/* LOGO */
+/* =============================== ABOUT =============================== */
+.about-sm-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: #D81222;
+}
+
+.about-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  color: #2B2B2B;
+  padding-bottom: 16px;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #666;
+}
+
+/* =============================== LOGO =============================== */
 
 .clients-logos {
   text-align: center;
