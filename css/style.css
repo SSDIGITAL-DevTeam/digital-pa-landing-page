@@ -41,6 +41,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 35px;
+  color: #111;
 }
 
 .hero-btn {
@@ -55,15 +56,15 @@
 }
 
 
-/* =============================== ABOUT =============================== */
-.about-sm-title {
+/* =============================== TITLE =============================== */
+.sect-title-sm {
   font-weight: 500;
   font-size: 20px;
   line-height: 35px;
   color: #D81222;
 }
 
-.about-title {
+.sect-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 60px;
@@ -71,11 +72,61 @@
   padding-bottom: 16px;
 }
 
-.about-text {
+.sect-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 35px;
   color: #666;
+}
+
+/* =============================== CARD =============================== */
+
+.container-s-card {
+  padding: 10px;
+}
+
+.s-card {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.s-card-about {
+  padding: 50px 22px;
+}
+
+.s-card-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2B2B2B;
+  padding-bottom: 16px;
+}
+
+.s-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #2B2B2B;
+}
+
+.s-card-text-about {
+  line-height: 35px;
+}
+
+.s-card-text-service {
+  line-height: 25px;
+}
+
+.s-card-list-service {
+  text-align: start;
+  list-style-image: url('../img/icon-check-black.png');
+}
+
+.s-card-list-item-service {
+  line-height: 17.5px;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 12px;
 }
 
 /* =============================== LOGO =============================== */
