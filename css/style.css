@@ -14,6 +14,10 @@
   color: #D81222;
 }
 
+a:hover {
+  color: #f00 !important;
+}
+
 .btn-login {
   width: 200px;
   height: 56px;
@@ -77,6 +81,50 @@
   font-size: 16px;
   line-height: 35px;
   color: #666;
+}
+
+/* =============================== FORM =============================== */
+
+.sect-label-text {
+  color: #2B2B2B;
+  line-height: 20px;
+}
+
+.s-form-input {
+  border-radius: 12px;
+  border-color: #E4E5E7;
+}
+
+/* =============================== FOOTER =============================== */
+
+.s-footer {
+  background: #17161A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-footer-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.s-footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #B1B1B1;
+  margin-bottom: 16px;
+}
+
+.s-footer h3,
+.s-footer a,
+.s-footer p {
+  display: inline-block;
 }
 
 /* =============================== CARD =============================== */
