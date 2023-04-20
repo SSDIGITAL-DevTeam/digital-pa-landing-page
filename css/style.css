@@ -28,6 +28,11 @@ a:hover {
   font-size: 16px;
 }
 
+.btn-login:hover {
+  background: #f00 !important;
+  color: #fff !important;
+}
+
 /* =============================== HERO =============================== */
 
 .hero-title {
@@ -48,7 +53,9 @@ a:hover {
   color: #111;
 }
 
-.hero-btn {
+/* =============================== BUTTON =============================== */
+
+.s-primary-btn {
   background: #D81222;
   border-radius: 12px;
   height: 56px;
@@ -57,6 +64,19 @@ a:hover {
   font-weight: 700;
   font-size: 16px;
   color: #fff;
+}
+
+.s-primary-btn:hover {
+  background: #f00 !important;
+  color: #fff !important;
+}
+
+.s-dark-btn {
+  background-color: #2B2B2B !important;
+}
+
+.s-dark-btn:hover {
+  background: #111 !important;
 }
 
 
@@ -134,7 +154,7 @@ a:hover {
 }
 
 .s-card {
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1) !important;
   border-radius: 12px;
   background: #fff;
 }
