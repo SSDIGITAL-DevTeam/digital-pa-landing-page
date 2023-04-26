@@ -473,36 +473,38 @@
               fill out our form, ask whatever you wanna ask and look at how we helping you
             </p>
           </div>
+          <div id="form-contact"></div>
           <div class="row mt-4">
             <div class="col-lg-6 pt-3 pb-3 h-100 hide-image" data-aos="fade-right">
               <img class="hvr-grow" src="./img/image-18.png" alt="image-18" width="100%">
             </div>
             <div class="col-lg-6 pt-3 pb-3 h-100" data-aos="fade-up" data-aos-delay="400">
               <div class="s-card py-5 px-4">
-                <form name="form-contact" id="form-contact">
+                <form name="form-contact">
                   <div class="row">
                     <div class="col-lg-6 col-md-6 col-lx-6 mb-3">
                       <label for="name" class="form-label sect-text sect-label-text">Name</label>
-                      <input type="text" class="form-control s-form-input" id="name" name="name">
+                      <input type="text" class="form-control s-form-input" id="name" name="name" required>
                     </div>
                     <div class="col-lg-6 col-md-6 col-lx-6 mb-3">
                       <label for="email" class="form-label sect-text sect-label-text">Email</label>
-                      <input type="email" class="form-control s-form-input" id="email" name="email">
+                      <input type="email" class="form-control s-form-input" id="email" name="email" required>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-lg-6 col-md-6 col-lx-6 mb-3">
                       <label for="company" class="form-label sect-text sect-label-text">Company</label>
-                      <input type="text" class="form-control s-form-input" id="company" name="company">
+                      <input type="text" class="form-control s-form-input" id="company" name="company" required>
                     </div>
                     <div class="col-lg-6 col-md-6 col-lx-6 mb-3">
                       <label for="phone" class="form-label sect-text sect-label-text">Phone Number</label>
-                      <input type="tel" class="form-control s-form-input" id="phone" name="phone">
+                      <input type="tel" class="form-control s-form-input" id="phone" name="phone" required>
                     </div>
                   </div>
                   <div class="mb-4">
                     <label for="message" class="form-label sect-text sect-label-text">Message</label>
-                    <textarea class="form-control s-form-input" id="message" name="message" rows="4"></textarea>
+                    <textarea class="form-control s-form-input" id="message" name="message" rows="4"
+                      required></textarea>
                   </div>
                   <div class="d-flex justify-content-center">
                     <button type="button" class="btn s-primary-btn mt-1">Ask Us Anything</button>
