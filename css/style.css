@@ -251,6 +251,37 @@ a:hover {
   color: #666;
 }
 
+
+/* =============================== HIDE IMAGE =============================== */
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #D81222;
+  border-color: #D81222 transparent #D81222 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* =============================== HIDE IMAGE =============================== */
 @media screen and (max-width: 990px) {
   .hide-image {
