@@ -113,7 +113,7 @@
             </button>
           </div>
           <div class="col-lg-5" data-aos="fade-right" data-aos-delay="400">
-            <img class="hide-image hvr-grow" src="./img/image-1.png" alt="image-1" width="100%">
+            <img class="hvr-grow space-image tablet-image" src="./img/image-1.png" alt="image-1" width="100%">
           </div>
         </div>
       </div>
@@ -122,14 +122,15 @@
     <section id="about">
       <div class="py-vh-5 w-100">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 hide-image">
+          <div class="row align-items-center flex-wrap-reverse">
+            <div class="col-lg-6">
               <div class="row">
-                <div class="col-lg-6 mb-5 pb-5" data-aos="fade-up">
+                <div class="col-lg-6 mb-5 pb-5 hide-image" data-aos="fade-up">
                   <img class="mb-5 hvr-grow" src="./img/image-2.png" alt="image-2" width="100%">
                 </div>
-                <div class="col-lg-6 mt-5 pt-5" data-aos="fade-down" data-aos-delay="200">
-                  <img class="mt-5 hvr-grow" src="./img/image-3.png" alt="image-3" width="100%">
+                <div class="col-lg-6 mt-5 space-image" data-aos="fade-down" data-aos-delay="200">
+                  <img class="mt-5 hvr-grow space-image tablet-image" src="./img/image-3.png" alt="image-3"
+                    width="100%">
                 </div>
               </div>
             </div>
@@ -212,14 +213,15 @@
       </div>
       <div class="py-vh-5 w-100">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 hide-image">
+          <div class="row align-items-center flex-wrap-reverse">
+            <div class="col-lg-6">
               <div class="row">
-                <div class="col-lg-6 mb-5 pb-5" data-aos="fade-up">
+                <div class="col-lg-6 mb-5 pb-5 hide-image" data-aos="fade-up">
                   <img class="mb-5 hvr-grow" src="./img/image-12.png" alt="image-12" width="100%">
                 </div>
-                <div class="col-lg-6 mt-5 pt-5" data-aos="fade-down" data-aos-delay="200">
-                  <img class="mt-5 hvr-grow" src="./img/image-2.png" alt="image-2" width="100%">
+                <div class="col-lg-6 mt-5 pt-5 space-image" data-aos="fade-down" data-aos-delay="200">
+                  <img class="mt-5 hvr-grow space-image tablet-image" src="./img/image-2.png" alt="image-2"
+                    width="100%">
                 </div>
               </div>
             </div>
@@ -480,8 +482,8 @@
           </div>
           <div id="form-contact"></div>
           <div class="row mt-4">
-            <div class="col-lg-6 pt-3 pb-3 h-100 hide-image" data-aos="fade-right">
-              <img class="hvr-grow" src="./img/image-18.png" alt="image-18" width="100%">
+            <div class="col-lg-6 pt-3 pb-3 h-100" data-aos=" fade-right">
+              <img class="hvr-grow tablet-image" src="./img/image-18.png" alt="image-18" width="100%">
             </div>
             <div class="col-lg-6 pt-3 pb-3 h-100" data-aos="fade-up" data-aos-delay="400">
               <div class="s-card py-5 px-4">
@@ -784,6 +786,33 @@
     };
 
     formEl.addEventListener("submit", sendEmail);
+  </script>
+
+  <!-- Send WhatsApp -->
+  <script>
+    const sendWA = () => {
+      fetch(`https://graph.facebook.com/v16.0/111767025239299/messages`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer EAAXnyB8QsqsBAHtWHlpOBNl4OdIi2dvIRDaynRqbiwDKIZBIbWZCrbrTqYKp0ZCyOfO8AsZCFBUWHv480Tl1TYQKRnIxZARDLVnwdkD0W7p9D5uD35ZAEbI419bWAzHL8rcRHHhXRWsSffuwFDQbbY6TykL4ilzdOC4kJu0szbKw4Ul98MvpSjgT6AEFLe7ashWGrb162kZA9KIgjbeRDwb`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          "messaging_product": "whatsapp",
+          "preview_url": false,
+          "recipient_type": "individual",
+          "to": '6282274022132',
+          "type": "text",
+          "text": {
+            "body": 'Welcome to the Movie Ticket Demo App for Node.js!'
+          }
+        })
+      })
+        .then(val => val.json())
+        .then(valJson => console.log(valJson))
+        .catch(err => console.log(err));
+    }
+    sendWA();
   </script>
 </body>
 

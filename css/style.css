@@ -288,6 +288,20 @@ a:hover {
     display: none;
     height: 0;
   }
+
+  .space-image {
+    margin: 0 !important;
+    padding-top: 20px !important;
+  }
+}
+
+
+@media screen and (min-width: 670px) and (max-width: 990px) {
+  .tablet-image {
+    width: 60%;
+    display: block !important;
+    margin: 0 auto !important;
+  }
 }
 
 /* =============================== LOGO =============================== */
